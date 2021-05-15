@@ -1,11 +1,11 @@
 import React from "react";
 
-function Height() {
+function HeightWeightAge(props) {
   return (
     <div>
-      <h2>HEIGHT</h2>
+      <h2>{props.title}</h2>
       <input placeholder="value"></input>
     </div>
   );
 }
-export default Height;
+export default HeightWeightAge;
