@@ -9,51 +9,69 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   color: white;
-
-  background-image: linear-gradient(
-    to top,
-    #b7fdf9,
-    #9feff8,
-    #8ce1f8,
-    #80d1f6,
-    #7dc0f2,
-    #89b6f2,
-    #99aaed,
-    #ab9ee4,
-    #c695da,
-    #dd8bc9,
-    #ef83b3,
-    #f97f99
+  background: linear-gradient(
+    180deg,
+    #e42964,
+    #df3867,
+    #d4475c,
+    #f0846e,
+    #f0846e,
+    #f0846e,
+    #f7b393,
+    #fdd1af,
+    #ffdbba
   );
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 .container {
-  margin: 5% 20%;
-  padding: 20px 0;
+  margin: 1% 20%;
+  /* padding: 20px 0; */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-self: center;
-  /* border: 2px solid black; */
 }
 
-h1 {
-  font-size: 3em;
-  color: white;
-  font-weight: bold;
-  padding: 10px 20px;
-}
 .gender {
   justify-content: space-evenly;
   display: flex;
   margin: 0 20%;
 }
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   font-weight: bold;
   padding: 20px;
+}
+
+#genderButton {
+  padding: 6px 40px;
+  border-radius: 30px;
+  color: #f50057;
+  background-color: white;
+}
+#genderButton:hover,
+#submitButton:hover {
+  opacity: 0.7;
+}
+#slider {
+  color: #f50057;
+  background-color: white;
+  border-radius: 31px;
+}
+#sliderDiv {
+  position: relative;
+  margin: auto;
+}
+#submitButton {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #f50057;
+  margin-left: 100%;
+  background-color: white;
+  align-self: center;
 }
