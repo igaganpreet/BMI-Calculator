@@ -10,8 +10,21 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   color: white;
 
-  background-color: white;
-
+  background-image: linear-gradient(
+    to top,
+    #b7fdf9,
+    #9feff8,
+    #8ce1f8,
+    #80d1f6,
+    #7dc0f2,
+    #89b6f2,
+    #99aaed,
+    #ab9ee4,
+    #c695da,
+    #dd8bc9,
+    #ef83b3,
+    #f97f99
+  );
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -24,12 +37,12 @@ body {
   flex-direction: column;
   justify-content: center;
   justify-self: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 h1 {
   font-size: 3em;
-  color: black;
+  color: white;
   font-weight: bold;
   padding: 10px 20px;
 }
@@ -40,7 +53,7 @@ h1 {
 }
 h2 {
   font-size: 2em;
-  color: black;
+  color: white;
   font-weight: bold;
   padding: 20px;
 }
