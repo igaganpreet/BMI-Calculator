@@ -75,3 +75,8 @@ h2 {
   background-color: white;
   align-self: center;
 }
+.heightandweight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

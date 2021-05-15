@@ -10,16 +10,17 @@ const useStyles = makeStyles({
 
 function DiscreteSlider(props) {
   function valuetext(value) {
-    props.onGetValue(() => {
-      return { title: props.title, content: value };
-    });
-    // return value;
+    return value;
+  }
+  function handleChange(event, value) {
+    return props.toGetValue(value);
   }
   const classes = useStyles();
 
   return (
     <div className={classes.root} id="sliderDiv">
       <Slider
+        onChange={handleChange}
         id="slider"
         defaultValue={props.defaultValue}
         getAriaValueText={valuetext}
