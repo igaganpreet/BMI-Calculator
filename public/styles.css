@@ -11,21 +11,44 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   color: white;
-  background: linear-gradient(
-    180deg,
-    #e42964,
-    #df3867,
-    #d4475c,
-    #f0846e,
-    #f0846e,
-    #f0846e,
-    #f7b393,
-    #fdd1af,
-    #ffdbba
+  background-image: linear-gradient(
+    to bottom,
+    #f4377a,
+    #f54183,
+    #f54a8b,
+    #f55393,
+    #f55b9b,
+    #f167aa,
+    #ed72b8,
+    #e77dc4,
+    #da8ed6,
+    #cd9de2,
+    #c2abea,
+    #bab7ee
   );
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+h1 {
+  font-size: 1.8em;
+  font-weight: 900;
+  padding: 3%;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 3%;
+}
+h4 {
+  color: rgb(77, 77, 77);
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 15px 10px;
+}
+.resultDisplay h4 {
+  padding: 0px 10px;
+  margin-left: 10%;
 }
 .container {
   margin: 1% 28%;
@@ -40,12 +63,6 @@ body {
   justify-content: space-evenly;
   display: flex;
   margin: 0 15%;
-}
-h2 {
-  font-size: 1.5em;
-  color: white;
-  font-weight: bold;
-  padding: 3%;
 }
 
 #genderButton {
@@ -79,29 +96,16 @@ h2 {
   z-index: 10;
   box-shadow: 4px 3px rgba(233, 226, 226, 0.959);
 }
-p {
-  /* color: var(--pink); */
-  color: rgb(77, 77, 77);
-  /* margin: -35px 0 0 0; */
-  padding: 20px;
-  position: relative;
-  z-index: 10;
-}
-/* svg {
-  z-index: 0;
-} */
+
 .resultDisplay {
   display: flex;
   flex-direction: row;
   z-index: 5;
   margin-top: 5%;
+  padding: 0 10%;
 }
 .bmiDisplay {
   display: flex;
   flex-direction: column;
   margin-left: 39px;
-}
-h4 {
-  color: rgb(77, 77, 77);
-  font-size: 1.2em;
 }
